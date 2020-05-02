@@ -1,0 +1,195 @@
+/*
+* This works well on an up-to-date Gecko-based browsers such as Firefox, Palemoon, and SeaMonkey
+* This works in webkit browsers, but does it poorly and I experience some lags with it
+* Colour scheme based on Spacegray.vim: https://github.com/ajh17/Spacegray.vim
+*
+* Homepage by: grillmaster-t28
+* Version: v4.2
+* Website: http://grillmaster.net16.net/
+* Last Updated: 2016 Aug 14
+* License: Public Domain
+*
+* No Javascript is required to use this homepage
+*
+* The original DuckDuckGo (Lite) is still there, you just need to uncomment it and comment-on/delete
+* the startpage one.
+*
+* 4.2 - 
+*       Fixed spelling error: Libary -> Library
+*       Changed the 4chan boards
+*       Added soundcloud, Dan Pollock (known for his host file), and Postimage
+*
+* 4.1 - 
+*       Transparent background for search box
+*       Changed from DuckDuckGo Lite to StartPage (Search)
+*       Changed from 8chan to Contents and Trackers (Links)
+*       Added images for repository
+*       Opacity lowered for link boxes
+*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#t a {
+	color: #B7BBB7;
+	text-decoration: none; 
+}
+
+a:link, a:visited {
+	color: #66899D;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #8D6494;
+	text-decoration: none;
+}
+
+h1, aside, h2 {
+	max-width: 300px;
+	padding: 10px;
+	/*background-color: rgba(0, 0, 0, 0.7);*/
+	text-shadow: 2px 2px 5px #000000;
+}
+
+/* Page structure */
+
+body {
+	font-family: calibri;
+	background: #111314 url('images/main.jpg') no-repeat fixed center;
+	background-size: cover;
+	color: #B7BBB7;
+	margin: auto;
+	padding: 20px 5px 20px 5px;
+	display: block;
+	max-width: 1920px;
+	/*overflow: hidden;*/
+	text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width:400px;
+  }
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 10;
+	padding: 0;
+	overflow: hidden;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: background-color 0.5s;
+}
+
+ul:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+	padding-right: 10px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+	font-size: 20px;
+}
+
+li.display{
+	line-height: 0;
+}
+
+div.section{
+	padding: 20px;
+	width: 250px;
+	height: 250px;
+	opacity: 0.4;
+	font-size: 16px;
+	transition: opacity 0.5s, width 0.5s, font-size 0.25s, background 1s;
+	-webkit-transition: opacity 0.5s, width 0.5s, font-size 0.25s, background 1s;
+	transition-timing-function: ease;
+	overflow: auto;
+	position: relative;
+	line-height: 1.4;
+}
+
+div.section:hover, div.section:focus {
+	opacity: 1;
+	font-size: 18px;
+	color: #FFF;
+	/*width: 400px;*/
+}
+
+div.section:hover #t a {
+	color: #FFF;
+}
+
+#main {
+	background: #111314 url('images/back_01.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#media {
+	background: #111314 url('images/back_02.png') no-repeat center center;
+	background-size: cover;
+}
+
+#free0 {
+	background: #111314 url('images/back_03.png') no-repeat center center;
+	background-size: cover;
+}
+
+#free1 {
+	background: #111314 url('images/back_04.png') no-repeat center center;
+	background-size: cover;
+}
+
+#free2 {
+	background: #111314 url('images/back_05.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#terraforming_mars {
+	background: #111314 url('images/back_06.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+#alchemists {
+	background: #111314 url('images/back_07.png') no-repeat center center;
+	background-size: cover;
+}
+
+#free3 {
+	background: #111314 url('images/back_08.png') no-repeat center center;
+	background-size: cover;
+}
+
+/* SearchBox */
+
+.searchForm {
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
+.searchInput {
+	width: 95%;
+	border: none;
+	margin: auto;
+	display: block;
+	padding: 5px 10px 5px 10px;
+	/*background-color: #343d46;*/
+	background-color: rgba(52, 61, 70, 0.4);
+	color: #eff1f5;
+	font-size: 16px;
+}
