@@ -115,7 +115,7 @@ li.display{
 div.section{
 	padding: 20px;
 	width: 250px;
-	height: 450px;
+	height: auto;
 	opacity: 0.4;
 	font-size: 16px;
 	transition: opacity 0.5s, width 0.5s, font-size 0.25s, background 1s;
